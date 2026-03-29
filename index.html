@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kozmetika Exposed</title>
+
+<meta name="robots" content="noindex, nofollow">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #0f0f0f, #1a001f);
+  color: white;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(90deg, #ff4d6d, #9d4edd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px 0;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255,0,100,0.2);
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.highlight {
+  color: #ff4d6d;
+  font-weight: 600;
+}
+
+.funfact {
+  background: linear-gradient(90deg, #ff4d6d, #9d4edd);
+  padding: 10px;
+  border-radius: 12px;
+  margin: 10px 0;
+  color: white;
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.warning {
+  background: #ff4d6d;
+  color: black;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  opacity: 0.6;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💄 KOZMETIKA EXPOSED</h1>
+
+<div class="card" onclick="openPage('inci.html')">
+  <h2>👀 Si kdaj pogledal sestavine?</h2>
+  <p>Večina mladih NE bere <span class="highlight">INCI seznama</span>… ali pa sploh ne ve kaj to je.</p>
+  <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+</div>
+
+<div class="card" onclick="openPage('inci.html')">
+  <h2>📋 Kaj je INCI?</h2>
+  <p><span class="highlight">INCI</span> = seznam vseh sestavin v izdelku.</p>
+  <p>Napisan je tako, da ga večina ljudi ne razume 🤷‍♂️</p>
+</div>
+
+<div class="card" onclick="openPage('resnica.html')">
+  <h2>⚠️ Kaj si daješ na kožo?</h2>
+  <p>Nekatere sestavine so lahko:</p>
+  <ul>
+    <li>dražilne</li>
+    <li>alergene</li>
+    <li>problematične pri dolgotrajni uporabi</li>
+  </ul>
+  <div class="warning">Ne nasedaj samo reklami.</div>
+</div>
+
+<div class="card" onclick="openPage('funfacts.html')">
+  <h2>🤯 FUN FACTS</h2>
+  <div class="funfact">Uporabimo več kot 10 izdelkov dnevno.</div>
+  <div class="funfact">Večina ljudi nikoli ne preveri sestavin.</div>
+  <div class="funfact">"Naravno" ≠ vedno varno.</div>
+  <div class="funfact">Embalaža pogosto prodaja več kot vsebina.</div>
+  <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+</div>
+
+<div class="card" onclick="openPage('zakaj.html')">
+  <h2>🧠 Zakaj je to pomembno?</h2>
+  <p>Kozmetika je del tvojega vsakdana. To pomeni dolgoročen vpliv.</p>
+  <p>Klikni za več 👆</p>
+</div>
+
+<footer>
+Kampanja za ozaveščanje mladih
+</footer>
+
+</div>
+
+<script>
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if(top < window.innerHeight - 50){
+      card.classList.add("show");
+    }
+  });
+});
+
+function openPage(page){
+  window.location.href = page;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resnica o kozmetiki</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+<style>
+body { margin:0; font-family:'Poppins',sans-serif; background:linear-gradient(180deg,#0f0f0f,#1a001f); color:white; overflow-x:hidden;}
+.container { max-width:500px; margin:auto; padding:20px;}
+h1 { font-size:32px; font-weight:800; text-align:center; background:linear-gradient(90deg,#ff4d6d,#9d4edd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:20px;}
+.card { background:rgba(255,255,255,0.05); backdrop-filter: blur(10px); padding:20px; margin:15px 0; border-radius:20px; box-shadow:0 0 20px rgba(255,77,109,0.3); transition:0.5s;}
+.card:hover { transform:scale(1.03);}
+h2 { font-size:20px; margin-top:0;}
+ul { padding-left:20px;}
+img { width:100%; border-radius:15px; margin-top:10px;}
+.highlight { color:#ff4d6d; font-weight:600;}
+.back-btn { display:inline-block; margin-top:30px; padding:12px 25px; font-weight:600; background:linear-gradient(90deg,#ff4d6d,#9d4edd); color:white; border-radius:12px; cursor:pointer; transition:0.3s; text-align:center; text-decoration:none;}
+.back-btn:hover { transform:scale(1.1) rotate(-2deg);}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>⚠️ Kaj si daješ na kožo?</h1>
+
+<div class="card">
+<h2>Problematične sestavine</h2>
+<p>V izdelkih se pogosto skrivajo sestavine, ki:</p>
+<ul>
+<li>dražijo kožo</li>
+<li>lahko povzročijo alergije</li>
+<li>so sporni pri dolgotrajni uporabi</li>
+</ul>
+<img src="images/resnica1.jpg" alt="kozmetični izdelki na mizi">
+</div>
+
+<div class="card">
+<h2>Marketing vs resnica</h2>
+<p>“Naravno”, “eko” ali “brez kemije” – pogosto je samo trik za prodajo.</p>
+<p>Vedno preveri seznam sestavin, ne samo embalažo.</p>
+<img src="images/resnica2.jpg" alt="naravna kozmetika">
+</div>
+
+<div class="card">
+<h2>Kako brati INCI?</h2>
+<ul>
+<li>Prve sestavine = največja količina.</li>
+<li>Če so kemikalije na začetku, je izdelek močno predelan.</li>
+<li>Bodi pozoren na sestavine, ki jih občutiš kot dražeče.</li>
+</ul>
+<img src="images/resnica3.jpg" alt="kozmetični laboratorij">
+</div>
+
+<a class="back-btn" onclick="history.back()">⬅ Nazaj</a>
+</div>
+</body>
+</html>

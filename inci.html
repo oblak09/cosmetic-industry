@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INCI Seznam</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg,#0f0f0f,#1a001f);
+  color: white;
+  overflow-x: hidden;
+}
+.container { max-width:500px; margin:auto; padding:20px;}
+h1 { font-size:32px; font-weight:800; text-align:center; background:linear-gradient(90deg,#ff4d6d,#9d4edd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:20px;}
+.card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); padding:20px; margin:15px 0; border-radius:20px; box-shadow:0 0 20px rgba(255,77,109,0.3); transition:0.5s;}
+.card:hover { transform: scale(1.03);}
+h2 { font-size:20px; margin-top:0;}
+.highlight { color:#ff4d6d; font-weight:600;}
+ul { padding-left:20px;}
+img { width:100%; border-radius:15px; margin-top:10px;}
+.back-btn { display:inline-block; margin-top:30px; padding:12px 25px; font-weight:600; background:linear-gradient(90deg,#ff4d6d,#9d4edd); color:white; border-radius:12px; cursor:pointer; transition:0.3s; text-align:center; text-decoration:none;}
+.back-btn:hover { transform:scale(1.1) rotate(-2deg);}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>📋 INCI SEZNAM</h1>
+
+<div class="card">
+<h2>Kaj je INCI?</h2>
+<p><span class="highlight">INCI</span> = International Nomenclature of Cosmetic Ingredients.</p>
+<p>Gre za seznam vseh sestavin izdelka, ki ti pove, kaj dejansko naneseš na kožo.</p>
+<img src="images/inci1.jpg" alt="kozmetične sestavine">
+</div>
+
+<div class="card">
+<h2>Zakaj ga je težko razumeti?</h2>
+<ul>
+<li>Sestavine so pogosto zapisane v latinščini ali kemijskih imenskih kodah.</li>
+<li>Tehnično napisan seznam skriva pomembne informacije.</li>
+<li>Marketing pogosto uporablja “lepše besede” za isto stvar.</li>
+</ul>
+<img src="images/inci2.jpg" alt="kemijske sestavine">
+</div>
+
+<div class="card">
+<h2>Primeri sestavin</h2>
+<ul>
+<li><strong>Parabeni</strong> – konzervansi, motijo hormone.</li>
+<li><strong>Silikoni</strong> – plast na koži, ki lahko zamaši pore.</li>
+<li><strong>Sintetična dišava</strong> – draži kožo ali povzroča alergije.</li>
+</ul>
+<img src="images/inci3.jpg" alt="kozmetični izdelki">
+</div>
+
+<a class="back-btn" onclick="history.back()">⬅ Nazaj</a>
+</div>
+</body>
+</html>
