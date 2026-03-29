@@ -9,6 +9,19 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
 
+<script>
+  const secretKey = "kozmetika123";
+  const urlParams = new URLSearchParams(window.location.search);
+  const key = urlParams.get("key");
+  if (key !== secretKey) {
+    document.body.innerHTML = `
+      <div style="display:flex; justify-content:center; align-items:center; height:100vh; text-align:center; background:#0f0f0f; color:white; font-family:'Poppins', sans-serif;">
+        <h1>🚫 Dostop zavrnjen</h1>
+        <p>Za ogled te strani potrebujete QR kodo s pravim ključem.</p>
+      </div>
+    `;
+  }
+</script>  
 <style>
 body {
   margin: 0;
